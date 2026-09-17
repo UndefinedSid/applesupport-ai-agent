@@ -1,9 +1,6 @@
 # `@AppleSupport` AI Customer Support Agent
 
-> **Hiver SDE Intern Take-Home Assignment Submission**  
-> **Brand**: `@AppleSupport` (from Kaggle `thoughtvector/customer-support-on-twitter`)  
-> **Author**: Antigravity AI Engineering  
-> **Submission Contact**: `anurag@hiverhq.com`  
+> **Brand**: `@AppleSupport` (from Kaggle `thoughtvector/customer-support-on-twitter`)   
 
 ---
 
