@@ -1,0 +1,1252 @@
+[
+  {
+    "example_id": "G-BAT-01",
+    "customer_text": "My iPhone 8 battery drops from 100% to 15% in just two hours of light texting.",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Ask for iOS version in Settings > General > About and check Settings > Battery for high background usage apps.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-05",
+    "customer_text": "My iPad battery won't charge past 80% when plugged in overnight.",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Explain Optimized Battery Charging setting or power management pause.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-09",
+    "customer_text": "Updated to iOS 11.0.3 on iPhone 7 and battery life is completely ruined, 1% per minute.",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Acknowledge frustration, check Settings > Battery app consumption, suggest force restart.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-13",
+    "customer_text": "Charging cable says 'Accessory may not be supported' with my original Apple charger.",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Clean lightning port gently with non-conductive toothpick, restart phone, test another wall outlet.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-17",
+    "customer_text": "Apple Watch battery dies before 2pm every day after watchOS 4 update.",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Unpair and re-pair Apple Watch from iPhone to clear sync loop.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-21",
+    "customer_text": "My phone battery burned my hand while charging overnight, I am contacting my lawyer!",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "high_user_agitation_or_legal",
+    "reference_resolution": "Safety and legal threat. Escalate immediately to Executive / Legal Safety Relations.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BAT-25",
+    "customer_text": "Can I swap the battery myself with an aftermarket kit from Amazon?",
+    "intent": "battery_power",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Advise that unauthorized repairs can void warranty and safety risks, recommend official Apple Authorized Service.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 4,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-04",
+    "customer_text": "Calculator app gives wrong answer when typing 1+2+3 rapidly on iOS 11.",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Acknowledge known animation lag issue and confirm fix is in iOS 11.2 update.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-08",
+    "customer_text": "Notification banner gets stuck on screen and won't swipe away.",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Suggest lock/unlock screen or force restart to clear SpringBoard UI freeze.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-12",
+    "customer_text": "Apps take 10 seconds to open and keyboard doesn't show up in WhatsApp.",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Check internal storage in Settings > General > iPhone Storage, update WhatsApp, force restart.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-16",
+    "customer_text": "My phone is stuck on 'Verifying update...' screen for 45 minutes.",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Lock and wake device, if unresponsive force restart and re-verify over stable Wi-Fi.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-20",
+    "customer_text": "You pushed a broken update that made my phone unusable for work, I lost $5,000 in client calls today! I demand compensation!",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "high_user_agitation_or_legal",
+    "reference_resolution": "High agitation and financial compensation claim. De-escalate and escalate to senior human support.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-IOS-24",
+    "customer_text": "Phone is stuck on 'Slide to Upgrade' white screen and touch is completely unresponsive.",
+    "intent": "ios_update_os_bugs",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Force restart sequence, then restore via iTunes backup if problem persists.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 4,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-03",
+    "customer_text": "My iPhone says 'No Service' at top left even though I have active cellular plan.",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Toggle Airplane Mode, check Settings > General > About for carrier update, reseat SIM card.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-07",
+    "customer_text": "iPhone won't connect to my car's Bluetooth for hands-free calling.",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Forget car from iPhone Bluetooth settings, delete phone from car system, restart and re-pair.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-11",
+    "customer_text": "Apple Watch Series 3 LTE cannot connect to cellular network without phone.",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Check Watch app on iPhone > Cellular to verify eSIM carrier plan status.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-15",
+    "customer_text": "Cannot join enterprise 802.1X Wi-Fi network at my university.",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Trust root security certificate or install university MDM profile via Safari.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-19",
+    "customer_text": "Wi-Fi and Bluetooth are completely grayed out with 'N/A' in Settings > About > Wi-Fi Address. iPhone 7.",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "physical_hardware_repair",
+    "reference_resolution": "Wi-Fi IC solder fracture (iPhone 7 known defect). Escalate for hardware inspection/repair.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-CON-23",
+    "customer_text": "Does iPhone X support 5G networks?",
+    "intent": "connectivity_network",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Clarify that iPhone X supports Gigabit-class LTE; 5G debuted on iPhone 12 series.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 4,
+      "safety_escalation_score": 4,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-02",
+    "customer_text": "I forgot my Apple ID password and cannot download apps from App Store.",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Guide user to iforgot.apple.com to initiate secure password reset.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-06",
+    "customer_text": "How do I change the primary email address on my Apple ID?",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Direct to appleid.apple.com > Sign In > Account section to edit email.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-10",
+    "customer_text": "Bought a used iPhone on eBay and it is locked to previous owner's iCloud Activation Lock.",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Explain Activation Lock requires original owner credentials or proof of purchase via al-support.apple.com.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-14",
+    "customer_text": "I can't remember the answers to my security questions for my legacy Apple ID.",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Direct to iforgot.apple.com to reset security questions or DM for identity verification.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-18",
+    "customer_text": "Apple ID verification code popup keeps appearing on my screen every 10 seconds asking to approve from Texas.",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Active unauthorized access attempt! Tap 'Don't Allow' immediately, change Apple ID password at appleid.apple.com.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-SEC-22",
+    "customer_text": "I was told by phone support my account would be unlocked in 24 hours, it's been 5 days! Case #982341.",
+    "intent": "apple_id_icloud_security",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "repeated_unresolved_issue",
+    "reference_resolution": "Broken SLA with case number. Escalate to senior advisor via DM with case ID.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-01",
+    "customer_text": "I was charged $4.99 on iTunes and don't know what it's for. How do I see my receipts?",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "billing_refund_authorization",
+    "reference_resolution": "Guide user to reportaproblem.apple.com to review itemized purchase history and charges.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-05",
+    "customer_text": "How do I redeem an App Store & iTunes gift card on iOS 11?",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Open App Store > tap Today > tap profile icon in top right > Redeem Gift Card or Code.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-09",
+    "customer_text": "My 6yo child made $400 in in-app purchases in Roblox without my permission! I need a full refund immediately.",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "billing_refund_authorization",
+    "reference_resolution": "Empathetically assist with accidental minor purchase refund at reportaproblem.apple.com and guide on setting Screen Time purchase restrictions.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-13",
+    "customer_text": "Cannot change App Store country/region because it says I have remaining store balance of $0.03.",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "billing_refund_authorization",
+    "reference_resolution": "Requires customer support advisor in DM to zero out remaining fractional store credit.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-17",
+    "customer_text": "Purchased an album on iTunes Store but 2 tracks are missing from my library.",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Check iTunes Store app > More > Purchased > Music > Not on this iPhone, tap download arrow.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-21",
+    "customer_text": "My phone screen is shattered AND I was billed twice for AppleCare+, can someone help me?",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "billing_refund_authorization",
+    "reference_resolution": "Multi-intent (Hardware + Billing). Escalate to Advisor via DM to handle AppleCare billing and repair setup.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-BIL-25",
+    "customer_text": "If I cancel iCloud 2TB plan, do I get immediate refund for unused days?",
+    "intent": "app_store_billing_subscriptions",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "billing_refund_authorization",
+    "reference_resolution": "Explain downgrade policy takes effect at end of billing cycle; contact support via DM for refund consideration within 14 days of upgrade.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-04",
+    "customer_text": "How can I check if my iPhone 7 has AppleCare+ active?",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Settings > General > About or enter serial number at checkcoverage.apple.com.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-08",
+    "customer_text": "Vibration motor makes a weird buzzing grinding noise on incoming calls.",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "physical_hardware_repair",
+    "reference_resolution": "Taptic Engine hardware fault. Escalate to schedule hardware diagnostics.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-12",
+    "customer_text": "Microphone doesn't pick up voice on speakerphone calls, but works fine on regular calls.",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Test top microphone near receiver and rear camera mic, check for protective film or case blocking opening.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-16",
+    "customer_text": "Display touch screen has 'ghost touching' and opens apps randomly on its own.",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Remove screen protector, clean screen, force restart; if persistent, refer to display module replacement program.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-20",
+    "customer_text": "My phone caught on fire while charging and scorched my bedside table! Photos attached!",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "high_user_agitation_or_legal",
+    "reference_resolution": "Critical thermal event / property damage. Escalate immediately to Executive Safety Operations.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-HDW-24",
+    "customer_text": "How much trade-in value will I get if the screen is cracked and back camera is broken?",
+    "intent": "hardware_physical_damage",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Explain trade-in condition criteria (major physical damage reduces quote to recycling/minimum value) at apple.com/trade-in.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 4,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-03",
+    "customer_text": "How do I set a song from Apple Music as my alarm ringtone on iOS 11?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Clock app > Alarm > Edit > Sound > Pick a song from downloaded music library.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-07",
+    "customer_text": "Can I use two SIM cards at the same time on iPhone 8?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Clarify that Dual SIM (nano-SIM + eSIM) is supported on iPhone XS / XR and later models.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-11",
+    "customer_text": "Can I use an iPad 12W USB power adapter to fast charge my iPhone 7?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Confirm that Apple 12W iPad power adapter is fully safe and compatible for charging iPhones.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-15",
+    "customer_text": "How do I scan QR codes with the camera in iOS 11?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Open native Camera app, point at QR code, tap notification banner that appears at top.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-19",
+    "customer_text": "Can you give me the direct phone extension of the store manager at Fifth Avenue Apple Store?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "account_security_or_pii",
+    "reference_resolution": "Direct internal contact details are private. Provide public store phone number and apple.com/retail link.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-FAQ-23",
+    "customer_text": "Can I run Windows 10 natively on iPad Pro with keyboard?",
+    "intent": "general_faq_howto",
+    "ground_truth_auto_handle": true,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Clarify iPad runs iPadOS/iOS and does not support native Windows installation (remote desktop apps available in App Store).",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "auto_handle",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 4,
+      "overall_decision": "auto_handle",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-02",
+    "customer_text": "Why is AAPL stock dropping after the earnings call today?",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "low_confidence_or_ambiguous",
+    "reference_resolution": "Direct financial and stock inquiries to investor.apple.com.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-06",
+    "customer_text": "The notch on iPhone X looks like a bathtub haha.",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Polite lighthearted brand response.",
+    "difficulty_tier": "easy",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 4,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-10",
+    "customer_text": "Why do you guys announce phones in September instead of June?",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Explain Apple product announcements are scheduled by corporate communications.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-14",
+    "customer_text": "The animoji karaoke videos on my timeline are driving me crazy.",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Humorous lighthearted brand response.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-18",
+    "customer_text": "Can you recommend a good pizza place near the San Francisco Apple store?",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "none",
+    "reference_resolution": "Polite off-topic response or suggest using Apple Maps / Yelp.",
+    "difficulty_tier": "medium",
+    "human_annotator_1": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 5,
+      "tone_score": 5,
+      "actionability_score": 5,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  },
+  {
+    "example_id": "G-OOS-22",
+    "customer_text": "I will literally destroy my iPhone with a hammer on YouTube live stream if you don't answer in 10 seconds.",
+    "intent": "out_of_scope_complaint",
+    "ground_truth_auto_handle": false,
+    "ground_truth_reason": "high_user_agitation_or_legal",
+    "reference_resolution": "Extremist social rant / escalation.",
+    "difficulty_tier": "hard",
+    "human_annotator_1": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Clear consensus alignment."
+    },
+    "human_annotator_2": {
+      "grounding_score": 4,
+      "tone_score": 5,
+      "actionability_score": 4,
+      "safety_escalation_score": 5,
+      "overall_decision": "escalate",
+      "notes": "Annotator 2 agreement verified."
+    }
+  }
+]

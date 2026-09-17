@@ -1,0 +1,87 @@
+# ==============================================================================
+# Git Ignore Configuration for AppleSupport AI Support Agent
+# ==============================================================================
+
+# --- Python Environment & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# --- OS & System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Large Raw Datasets (>100MB GitHub limit) ---
+# Raw Kaggle 3M Twitter Customer Support dataset (~516 MB)
+dataset/twcs/
+dataset/twcs/*
+*.csv.zip
+*.tar.gz
+
+# Keep sample.csv if needed for reference, but ignore large raw twcs dumps
+# Note: golden_set.json and historical_knowledge_base.json in data/ are tracked for instant reproducibility
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+.env.*.local
+*.secret
+*.pem
+*.key
+
+# --- Temporary / Log Files ---
+*.log
+logs/
+tmp/
+temp/

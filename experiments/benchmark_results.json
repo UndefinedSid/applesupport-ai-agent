@@ -1,0 +1,247 @@
+{
+  "benchmark_models": [
+    {
+      "model_name": "Baseline 1 (Trivial)",
+      "sample_count": 200,
+      "intent_classification": {
+        "accuracy": 0.125,
+        "macro_precision": 0.0156,
+        "macro_recall": 0.125,
+        "macro_f1": 0.0278,
+        "weighted_f1": 0.0278
+      },
+      "escalation_triage": {
+        "triage_accuracy": 0.4,
+        "auto_handle_precision": 0.0,
+        "auto_handle_recall": 0.0,
+        "auto_handle_f1": 0.0,
+        "escalation_precision": 0.4,
+        "escalation_recall": 1.0,
+        "escalation_f1": 0.5714
+      },
+      "generation_quality": {
+        "bleu_1": 0.0434,
+        "bleu_2": 0.0008,
+        "rouge_l": 0.0445,
+        "semantic_similarity_cosine": 0.0133
+      },
+      "compliance": {
+        "char_limit_compliance_pct": 100.0,
+        "escalation_dm_routing_pct": 100.0,
+        "avg_reply_length_chars": 136.0
+      },
+      "llm_judge_scores": {
+        "grounding": 3.25,
+        "tone": 5.0,
+        "actionability": 5.0,
+        "safety": 3.8,
+        "overall": 4.26
+      },
+      "latency": {
+        "mean_latency_ms": 0.0,
+        "p95_latency_ms": 0.0,
+        "throughput_qps": 2212349.7
+      },
+      "difficulty_tier_breakdown": {
+        "easy": {
+          "count": 64,
+          "intent_accuracy": 0.125,
+          "escalation_accuracy": 0.2969
+        },
+        "medium": {
+          "count": 80,
+          "intent_accuracy": 0.125,
+          "escalation_accuracy": 0.375
+        },
+        "hard": {
+          "count": 56,
+          "intent_accuracy": 0.125,
+          "escalation_accuracy": 0.5536
+        }
+      }
+    },
+    {
+      "model_name": "Baseline 2 (Simple)",
+      "sample_count": 200,
+      "intent_classification": {
+        "accuracy": 0.475,
+        "macro_precision": 0.4682,
+        "macro_recall": 0.475,
+        "macro_f1": 0.4495,
+        "weighted_f1": 0.4495
+      },
+      "escalation_triage": {
+        "triage_accuracy": 0.64,
+        "auto_handle_precision": 0.6277,
+        "auto_handle_recall": 0.9833,
+        "auto_handle_f1": 0.7662,
+        "escalation_precision": 0.8333,
+        "escalation_recall": 0.125,
+        "escalation_f1": 0.2174
+      },
+      "generation_quality": {
+        "bleu_1": 0.0386,
+        "bleu_2": 0.0,
+        "rouge_l": 0.0424,
+        "semantic_similarity_cosine": 0.0239
+      },
+      "compliance": {
+        "char_limit_compliance_pct": 100.0,
+        "escalation_dm_routing_pct": 94.0,
+        "avg_reply_length_chars": 71.7
+      },
+      "llm_judge_scores": {
+        "grounding": 3.95,
+        "tone": 4.0,
+        "actionability": 4.35,
+        "safety": 3.58,
+        "overall": 3.97
+      },
+      "latency": {
+        "mean_latency_ms": 0.38,
+        "p95_latency_ms": 0.41,
+        "throughput_qps": 2599.5
+      },
+      "difficulty_tier_breakdown": {
+        "easy": {
+          "count": 64,
+          "intent_accuracy": 0.5469,
+          "escalation_accuracy": 0.7188
+        },
+        "medium": {
+          "count": 80,
+          "intent_accuracy": 0.475,
+          "escalation_accuracy": 0.6375
+        },
+        "hard": {
+          "count": 56,
+          "intent_accuracy": 0.3929,
+          "escalation_accuracy": 0.5536
+        }
+      }
+    },
+    {
+      "model_name": "Proposed AppleSupport Agent",
+      "sample_count": 200,
+      "intent_classification": {
+        "accuracy": 0.71,
+        "macro_precision": 0.7325,
+        "macro_recall": 0.71,
+        "macro_f1": 0.714,
+        "weighted_f1": 0.714
+      },
+      "escalation_triage": {
+        "triage_accuracy": 0.695,
+        "auto_handle_precision": 0.8391,
+        "auto_handle_recall": 0.6083,
+        "auto_handle_f1": 0.7053,
+        "escalation_precision": 0.5841,
+        "escalation_recall": 0.825,
+        "escalation_f1": 0.6839
+      },
+      "generation_quality": {
+        "bleu_1": 0.0713,
+        "bleu_2": 0.0224,
+        "rouge_l": 0.0787,
+        "semantic_similarity_cosine": 0.0477
+      },
+      "compliance": {
+        "char_limit_compliance_pct": 100.0,
+        "escalation_dm_routing_pct": 100.0,
+        "avg_reply_length_chars": 156.2
+      },
+      "llm_judge_scores": {
+        "grounding": 4.42,
+        "tone": 4.68,
+        "actionability": 4.99,
+        "safety": 4.25,
+        "overall": 4.59
+      },
+      "latency": {
+        "mean_latency_ms": 1.14,
+        "p95_latency_ms": 1.32,
+        "throughput_qps": 877.4
+      },
+      "difficulty_tier_breakdown": {
+        "easy": {
+          "count": 64,
+          "intent_accuracy": 0.7969,
+          "escalation_accuracy": 0.7812
+        },
+        "medium": {
+          "count": 80,
+          "intent_accuracy": 0.6375,
+          "escalation_accuracy": 0.6875
+        },
+        "hard": {
+          "count": 56,
+          "intent_accuracy": 0.7143,
+          "escalation_accuracy": 0.6071
+        }
+      }
+    }
+  ],
+  "human_calibration": {
+    "sample_size": 50,
+    "inter_annotator_agreement": {
+      "human1_vs_human2_cohens_kappa": 1.0,
+      "judge_vs_human1_cohens_kappa": 0.4849,
+      "judge_vs_ground_truth_cohens_kappa": 0.4849,
+      "binary_triage_raw_agreement_pct": 74.0
+    },
+    "rubric_score_correlations": {
+      "overall_pearson_r": 0.2988,
+      "overall_spearman_rho": 0.235,
+      "overall_p_value": 0.03502371244013601,
+      "grounding_pearson_r": 0.321,
+      "tone_pearson_r": -0.0932,
+      "safety_pearson_r": 0.1398
+    },
+    "rating_error_metrics": {
+      "mean_absolute_error_mae": 0.2925,
+      "root_mean_squared_error_rmse": 0.4074
+    },
+    "detailed_records": [
+      {
+        "id": "G-BAT-01",
+        "text": "My iPhone 8 battery drops from 100% to 15% in just two hours of light texting.",
+        "draft_reply": "@Customer Let's check your battery! Check Settings > Battery > Battery Health for capacity. A forced restart (Vol Up, Vol Down, hold Side button) can also help clear rogue processes.",
+        "human_overall": 4.875,
+        "judge_overall": 5.0,
+        "judge_reasoning": "High quality response fully meeting Apple Support standards."
+      },
+      {
+        "id": "G-BAT-05",
+        "text": "My iPad battery won't charge past 80% when plugged in overnight.",
+        "draft_reply": "@Customer Let's check your battery! Check Settings > Battery > Battery Health for capacity. A forced restart (Vol Up, Vol Down, hold Side button) can also help clear rogue processes.",
+        "human_overall": 5.0,
+        "judge_overall": 5.0,
+        "judge_reasoning": "High quality response fully meeting Apple Support standards."
+      },
+      {
+        "id": "G-BAT-09",
+        "text": "Updated to iOS 11.0.3 on iPhone 7 and battery life is completely ruined, 1% per minute.",
+        "draft_reply": "@Customer Thanks for the details. Make sure you have at least 5GB free storage in Settings > General > iPhone Storage, and try a force restart to refresh system caches.",
+        "human_overall": 5.0,
+        "judge_overall": 4.25,
+        "judge_reasoning": "Intent misclassification affected technical grounding.; Lacks standard Apple empathetic customer greeting."
+      },
+      {
+        "id": "G-BAT-13",
+        "text": "Charging cable says 'Accessory may not be supported' with my original Apple charger.",
+        "draft_reply": "@Customer Battery life is important. Which iPhone model and iOS version (Settings > General > About) are you on? Also check Settings > Battery for heavy background apps.",
+        "human_overall": 5.0,
+        "judge_overall": 4.75,
+        "judge_reasoning": "Lacks standard Apple empathetic customer greeting."
+      },
+      {
+        "id": "G-BAT-17",
+        "text": "Apple Watch battery dies before 2pm every day after watchOS 4 update.",
+        "draft_reply": "@Customer We'd love to help with this glitch. Which version of iOS is installed in Settings > General > About? Does restarting your device resolve it temporarily?",
+        "human_overall": 5.0,
+        "judge_overall": 4.5,
+        "judge_reasoning": "Intent misclassification affected technical grounding."
+      }
+    ]
+  }
+}
